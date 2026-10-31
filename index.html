@@ -7,15 +7,31 @@
     <title>Brief</title>
 
     <meta name="description"
-        content="Brief is a shared calendar for small South African legal firms — consultations, depositions and court appearances in one diary.">
+        content="Brief handles the admin small legal firms don't want to do — consultations, appearances, availability, conflicts and tasks in one place.">
 
-    <meta property="og:title" content="Brief — scheduling for small legal firms">
+    <meta property="og:title" content="Brief — the admin, handled">
     <meta property="og:description"
-        content="A shared calendar for small South African legal firms. Consultations, depositions and court appearances in one diary.">
+        content="Consultations, appearances, availability, conflicts and tasks in one place. Handled quietly, so the firm can get back to the work that pays.">
     <meta property="og:type" content="website">
-    <!-- Luvo: add <meta property="og:image" content="…"> once you have a card. -->
+    <meta property="og:url" content="https://joinbrief.netlify.app/">
+    <meta property="og:image" content="https://joinbrief.netlify.app/assets/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Brief — the admin, handled.">
 
-    <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Brief — the admin, handled">
+    <meta name="twitter:description"
+        content="Consultations, appearances, availability, conflicts and tasks in one place. Handled quietly, so the firm can get back to the work that pays.">
+    <meta name="twitter:image" content="https://joinbrief.netlify.app/assets/images/og-image.png">
+
+    <meta name="theme-color" content="#1f3a2e">
+
+    <link rel="icon" href="assets/favicon_io/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon_io/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="assets/favicon_io/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/favicon_io/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,11 +65,11 @@
         <div class="hero-inner">
             <p class="hero-eyebrow">Scheduling for small legal firms</p>
             <h1 class="hero-title">
-                One diary. Every consultation, deposition and appearance.
+                The admin, handled.
             </h1>
             <p class="hero-lede">
-                Consultations, depositions and appearances in one shared calendar.
-                Availability, conflicts and tasks handled quietly in the background.
+                Consultations, appearances, availability, conflicts and tasks in one place.
+                Handled quietly, so the firm can get back to the work that pays.
             </p>
             <div class="hero-actions">
                 <a href="#waitlist" class="btn-primary">Join the waitlist</a>
@@ -74,15 +90,15 @@
                     <p class="section-lede" data-reveal>
                         Brief is for three to five people sharing a receptionist, a diary and
                         a landline. Not a firm with a practice manager. Not a firm with an IT
-                        department. The kind of firm where the calendar is the operating system,
-                        and a missed consultation is a lost client.
+                        department. The kind of firm where the day's admin decides whether the
+                        day works, and a missed consultation is a lost client.
                     </p>
                 </div>
 
                 <ol class="about-principles">
                     <li class="principle" data-reveal>
                         <span class="principle-num" aria-hidden="true">01</span>
-                        <h3 class="principle-title">One calendar, no spreadsheet.</h3>
+                        <h3 class="principle-title">One place, no spreadsheet.</h3>
                         <p class="principle-body">
                             Consultations, depositions and court appearances live in the same
                             view. Availability is read from what is already booked.
@@ -126,11 +142,11 @@
             <ul class="features-grid">
                 <li class="feature" data-reveal>
                     <span class="feature-num" aria-hidden="true">01</span>
-                    <h3 class="feature-title">One shared calendar.</h3>
+                    <h3 class="feature-title">One place for the day's work.</h3>
                     <p class="feature-body">
-                        Consultations, depositions and appearances in a single shared view,
-                        per staff member and per day. Availability is read from that same
-                        view — nothing to reconcile, nothing to keep in a second calendar.
+                        Consultations, appearances and tasks in a single shared view, per
+                        staff member and per day. Availability is read from that same
+                        view — nothing to reconcile, nothing to keep in a second list.
                     </p>
                 </li>
                 <li class="feature" data-reveal>
@@ -246,17 +262,6 @@
         </div>
     </footer>
 
-    <!--
-      Load order matters:
-        1. js/vendor/supabase.js  — vendored @supabase/supabase-js@2 UMD build.
-           NOT included in the repo yet. Download once from:
-             https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js
-           and save to js/vendor/supabase.js. Exposes window.supabase.
-        2. js/config.js           — SUPABASE_URL and SUPABASE_ANON_KEY. Gitignored.
-           Copy js/config.example.js → js/config.js and fill in.
-        3. js/main.js             — navbar state, reveals, waitlist form.
-      Until steps 1 and 2 are done, the form will not submit anywhere.
-    -->
     <script src="js/vendor/supabase.js"></script>
     <script src="js/config.js"></script>
     <script src="js/main.js" defer></script>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="Brief — The admin, handled.">
+    <!-- Background -->
+    <rect width="1200" height="630" fill="#f7f6f3" />
+
+    <!-- Mark, 96,96, 64×64, matching assets/images/logo.svg -->
+    <g transform="translate(96, 96)">
+        <rect x="0" y="0" width="64" height="42.667" fill="#1f3a2e" />
+        <rect x="0" y="53.333" width="64" height="5.333" fill="#0f1214" />
+    </g>
+
+    <!-- Headline -->
+    <text x="96" y="368"
+          font-family="'Newsreader', Georgia, 'Times New Roman', serif"
+          font-size="104"
+          font-weight="500"
+          letter-spacing="-2.08"
+          fill="#0f1214">The admin, handled.</text>
+
+    <!-- Subline -->
+    <text x="96" y="436"
+          font-family="'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+          font-size="28"
+          font-weight="400"
+          fill="#5b6169">One place for the firm's consultations, appearances and tasks.</text>
+
+    <!-- Domain, bottom-left, aligned with the mark's left edge -->
+    <text x="96" y="580"
+          font-family="'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif"
+          font-size="18"
+          font-weight="500"
+          letter-spacing="1.44"
+          fill="#5b6169">JOINBRIEF.NETLIFY.APP</text>
+</svg>
